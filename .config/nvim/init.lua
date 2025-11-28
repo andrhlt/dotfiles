@@ -9,7 +9,12 @@ vim.opt.number = true
 vim.opt.termguicolors = true
 vim.g.mapleader = " "
 
-vim.env["CODECOMPANION_TOKEN_PATH"] = vim.fn.expand("~/.config")
+-- auto refresh buffers
+vim.opt.autoread = true
+vim.api.nvim_create_autocmd({"FocusGained", "BufEnter", "CursorHold", "CursorHoldI"}, {
+  command = "checktime"
+})
+vim.opt.updatetime = 200
 
 local function load_env_var_from_file(var, file)
     local f = io.open(file, "r")

@@ -10,6 +10,13 @@ return {
       diagnostics = {
         enable = true,
         show_on_dirs = true
+      },
+      git = {
+        enable = true,
+        ignore = false
+      },
+      filters = {
+        git_ignored = false
       }
     })
     vim.api.nvim_set_keymap('n', '<leader>n', ':NvimTreeToggle<CR>', { noremap = true, silent = true })
