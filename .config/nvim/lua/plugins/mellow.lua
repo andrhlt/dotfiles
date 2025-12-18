@@ -1,4 +1,3 @@
 return {
-  'mellow-theme/mellow.nvim',
-  version = '*'
+  'mellow-theme/mellow.nvim'
 }

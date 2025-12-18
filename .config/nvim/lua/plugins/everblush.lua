@@ -1,4 +1,3 @@
 return {
-  'Everblush/nvim',
-  version = '*'
+  'Everblush/nvim'
 }

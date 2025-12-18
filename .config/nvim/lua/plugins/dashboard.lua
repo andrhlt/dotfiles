@@ -1,6 +1,5 @@
 return {
   'nvimdev/dashboard-nvim',
-  version = '*',
   event = 'VimEnter',
   config = function()
     require('dashboard').setup {

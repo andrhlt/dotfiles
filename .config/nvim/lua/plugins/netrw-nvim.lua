@@ -1,6 +1,5 @@
 return {
   'prichrd/netrw.nvim',
-    version = '*',
   dependencies = {
     'nvim-tree/nvim-web-devicons'
   },

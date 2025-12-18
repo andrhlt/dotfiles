@@ -1,4 +1,3 @@
 return {
-  'dracula/vim',
-  version = '*'
+  'dracula/vim'
 }
