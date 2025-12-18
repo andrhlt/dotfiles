@@ -3,6 +3,14 @@
 A starter template for [LazyVim](https://github.com/LazyVim/LazyVim).
 Refer to the [documentation](https://lazyvim.github.io/installation) to get started.
 
+## upgrades
+
+upgrade LSPs
+
+```vim
+:Mason
+```
+
 ## Notes
 
 ## Wipe / Reset
