@@ -1,4 +1,3 @@
 return {
-  "mfussenegger/nvim-lint",
-  version = '*'
+  "mfussenegger/nvim-lint"
 }

@@ -1,6 +1,5 @@
 return {
   "rachartier/tiny-devicons-auto-colors.nvim",
-  version = '*',
   dependencies = {
     "nvim-tree/nvim-web-devicons"
   },

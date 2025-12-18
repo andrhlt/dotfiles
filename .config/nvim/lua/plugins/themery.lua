@@ -1,6 +1,5 @@
 return {
   'zaldih/themery.nvim',
-  version = '*',
   config = function()
     require('themery').setup({
       livePreview = true,
