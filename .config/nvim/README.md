@@ -13,6 +13,18 @@ upgrade LSPs
 
 ## Notes
 
+mac deps
+
+```zsh
+brew install ripgrep fd
+```
+
+linux deps
+
+```zsh
+sudo apt install ripgrep fd-find fzf build-essential cmake unzip -y
+```
+
 ## Wipe / Reset
 
 Sometimes just need to wipe and reset:
@@ -50,22 +62,6 @@ Be sure to install:
 Linters managed similar to LSPs^
 
 [Docs](https://github.com/mfussenegger/nvim-lint)
-
-### Live Grep
-
-For best grepping, install ripgrep and fd.
-
-mac
-
-```zsh
-brew install ripgrep fd
-```
-
-linux
-
-```zsh
-sudo apt install ripgrep fd-find fzf -y
-```
 
 ### Icons
 
