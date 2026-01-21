@@ -64,7 +64,7 @@ brew install ripgrep fd
 linux
 
 ```zsh
-sudo apt install ripgrep fd-find -y
+sudo apt install ripgrep fd-find fzf -y
 ```
 
 ### Icons
