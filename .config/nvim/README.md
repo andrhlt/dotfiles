@@ -54,8 +54,18 @@ Linters managed similar to LSPs^
 ### Live Grep
 
 For best grepping, install ripgrep and fd.
-`brew install ripgrep`
-`brew install fd`
+
+mac
+
+```zsh
+brew install ripgrep fd
+```
+
+linux
+
+```zsh
+sudo apt install ripgrep fd-find -y
+```
 
 ### Icons
 
