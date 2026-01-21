@@ -1,19 +1,37 @@
 return {
-  'nvim-treesitter/nvim-treesitter',
-  build = ":TSUpdate",
-  config = function ()
-    local configs = require("nvim-treesitter.configs")
+  "nvim-treesitter/nvim-treesitter",
+  branch = "main",
 
-    configs.setup({
-      ensure_installed = { "c", "lua", "vim", "vimdoc", "query", "elixir", "heex", "javascript", "html" },
+  lazy = false,
+
+  build = function()
+    require("nvim-treesitter.install").update({ with_sync = true })
+  end,
+
+  config = function()
+    require("nvim-treesitter").setup({
+      ensure_installed = {
+        "lua",
+        "vim",
+        "vimdoc",
+        "query",
+        "javascript",
+        "html",
+      },
+
       auto_install = true,
-      sync_install = false,
-      highlight = { enable = true },
-      indent = { enable = true },
+
+      highlight = {
+        enable = true,
+      },
+
+      indent = {
+        enable = true,
+      },
     })
 
     vim.opt.foldmethod = "expr"
-    vim.opt.foldexpr = "nvim_treesitter#foldexpr()"
+    vim.opt.foldexpr = "v:lua.vim.treesitter.foldexpr()"
     vim.opt.foldlevelstart = 3
-  end
+  end,
 }
