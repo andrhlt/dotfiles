@@ -1,33 +1,57 @@
 return {
   "nvim-treesitter/nvim-treesitter",
-  branch = "main",
-
   lazy = false,
-
-  build = function()
-    require("nvim-treesitter.install").update({ with_sync = true })
-  end,
+  build = ":TSUpdate",
 
   config = function()
-    require("nvim-treesitter").setup({
-      ensure_installed = {
-        "lua",
-        "vim",
-        "vimdoc",
-        "query",
-        "javascript",
-        "html",
-      },
-
-      auto_install = true,
-
-      highlight = {
-        enable = true,
-      },
-
-      indent = {
-        enable = true,
-      },
+    require("nvim-treesitter").install({
+      "bash",
+      "cmake",
+      "cpp",
+      "css",
+      "csv",
+      "diff",
+      "dockerfile",
+      "git_config",
+      "git_rebase",
+      "gitattributes",
+      -- "gitcommit", not working...
+      "gitignore",
+      "go",
+      "graphql",
+      "html",
+      "http",
+      "java",
+      "javadoc",
+      "javascript",
+      "jq",
+      "jsdoc",
+      "json",
+      "kitty",
+      "lua",
+      "luadoc",
+      "make",
+      "markdown",
+      "markdown_inline",
+      "matlab",
+      "mermaid",
+      "nginx",
+      "objc",
+      "python",
+      "requirements",
+      "rust",
+      "scss",
+      "sql",
+      "ssh_config",
+      "swift",
+      "toml",
+      "tsx",
+      "typescript",
+      "vim",
+      "vimdoc",
+      "xml",
+      "yaml",
+      "zsh"
     })
 
     vim.opt.foldmethod = "expr"

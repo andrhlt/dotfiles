@@ -22,7 +22,7 @@ brew install ripgrep fd
 linux deps
 
 ```zsh
-sudo apt install ripgrep fd-find fzf build-essential cmake unzip -y
+sudo apt install ripgrep fd-find fzf -y
 ```
 
 ## Wipe / Reset

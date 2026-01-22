@@ -29,8 +29,4 @@ local function load_env_var_from_file(var, file)
     f:close()
   end
 
--- load_env_var_from_file("OPENAI_API_KEY", vim.fn.expand("~/dev/dotfiles/.env"))
--- load_env_var_from_file("ANTHROPIC_API_KEY", vim.fn.expand("~/dev/dotfiles/.env"))
--- load_env_var_from_file("TAVILY_API_KEY", vim.fn.expand("~/dev/dotfiles/.env"))
-
 require("config.lazy")
