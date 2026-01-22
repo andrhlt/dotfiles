@@ -13,10 +13,12 @@ upgrade LSPs
 
 ## Notes
 
+need to install tree-sitter-cli
+
 mac deps
 
 ```zsh
-brew install ripgrep fd
+brew install ripgrep fd tree-sitter-cli
 ```
 
 linux deps
@@ -24,6 +26,8 @@ linux deps
 ```zsh
 sudo apt install ripgrep fd-find fzf -y
 ```
+
+also don't forget to install tree-sitter-cli on linux
 
 ## Wipe / Reset
 
