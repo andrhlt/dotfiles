@@ -18,13 +18,13 @@ need to install tree-sitter-cli
 mac deps
 
 ```zsh
-brew install ripgrep fd tree-sitter-cli
+brew install ripgrep fd tree-sitter-cli luarocks
 ```
 
 linux deps
 
 ```zsh
-sudo apt install ripgrep fd-find fzf -y
+sudo apt install ripgrep fd-find fzf luarocks -y
 ```
 
 also don't forget to install tree-sitter-cli on linux
