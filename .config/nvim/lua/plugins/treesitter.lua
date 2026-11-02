@@ -58,13 +58,11 @@ return {
     vim.opt.foldexpr = "v:lua.vim.treesitter.foldexpr()"
     vim.opt.foldlevelstart = 3
 
-    -- TODO: temp disable markdown parsing due to .md crashing
+    -- Enable Markdown highlighting for rendering; use the Tree-sitter folds above.
     vim.api.nvim_create_autocmd("FileType", {
       pattern = "markdown",
       callback = function(args)
-        vim.opt_local.foldmethod = "manual"
-        vim.opt_local.foldexpr = "0"
-        pcall(vim.treesitter.stop, args.buf)
+        vim.treesitter.start(args.buf)
       end,
     })
 
